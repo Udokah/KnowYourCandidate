@@ -1,0 +1,15 @@
+<!--suppress ALL -->
+<div class="container" id="statesPage">
+	<form>
+	<input type="search" ng-model="searchState" class="textbox" placeholder="Search states" />
+	</form>
+
+	<div class="result">
+		<a ng-repeat="state in states | filter: searchState"
+           class="stateCard repeat-animation"
+           ng-click="$event.preventDefault(); linkClicked(state)">
+           {{ state.name }}
+        </a>
+	</div>
+
+</div>

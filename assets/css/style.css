@@ -1,0 +1,533 @@
+/*@import url(http://fonts.googleapis.com/css?family=Ubuntu:500|Open+Sans|Roboto);*/
+
+/*
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+html{
+    padding: 0 0 0 0 !important;
+    margin: 0 0 0 0 !important;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #0f0f0f;
+    padding: 0 0 20px 0 !important;
+    margin: 0 0 0 0 !important;
+    height: 100%;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+}
+
+p{
+    line-height: 25px;
+}
+
+.ajaxLoader{
+    position: absolute;
+    z-index: 999;
+    left:47%;
+    top:25%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.container{
+    text-align: center;
+    margin: 0 0 0 0 !important;
+    padding: 0 0 0 0;
+}
+
+/* Buttons */
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    padding:10px 25px;
+    font-size: 15px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+    font-weight: bold;
+    border-radius: 4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius: 4px;
+}
+
+.btn:active{
+    cursor: pointer;
+    -moz-box-shadow:    inset 0 0 10px rgba(0,0,0,.8);
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.8);
+    box-shadow:         inset 0 0 10px rgba(0,0,0,.8);
+    outline: none;
+    -webkit-webkit-outline: none;
+    -moz-webkit-outline: none;
+    -ms-webkit-outline: none;
+    -o-webkit-outline:none ;
+}
+
+.btn-green{
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.btn-white{
+    background-color: #ffffff;
+    color: #27ae60;
+}
+
+.btn-orange {
+    background-color:#d35400;
+    color: #ffffff;
+}
+
+/* End of buttons */
+
+.clear{
+    clear: both;
+}
+
+.header{
+    background-color: #27ae60;
+    background-image: url("../img/flag.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 5px 10px;
+}
+
+.header a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header .left{
+    position: relative;
+    float: left;
+}
+
+.header .right{
+    position: relative;
+    float: right;
+}
+
+::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #ffffff;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #ffffff;
+}
+
+:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+input:focus,
+a:active, a:focus{
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) ;
+    -webkit-tap-highlight-color: transparent ;
+    outline: none;
+    -webkit-webkit-outline: none;
+    -moz-webkit-outline: none;
+    -ms-webkit-outline: none;
+    -o-webkit-outline:none ;
+}
+
+/* Text box */
+.textbox{
+    padding: 10px;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff ;
+    font-size: 18px;
+    font-family: arial, helvetica, sans-serif;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius: 4px;
+    transition-property: transform, border;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out, linear;
+    background-image: url("../img/search.png");
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.textbox:focus{
+    padding: 10px;
+    color: #ffffff;
+    background-color: transparent;
+    outline: none;
+    -webkit-apearnance:none;
+    border-color: #2ecc71;
+}
+
+/* Start Page */
+
+#startPage{
+    background-color:#27ae60 ;
+}
+
+#startPage .top{
+    min-height: 180px;
+    color: #fff;
+    padding: 5px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+}
+
+#startPage .top h2{
+    display: block;
+    margin-top: 50px;
+}
+
+#startPage .bottom{
+    padding-top: 50px;
+    background-color:#ffffff ;
+    min-height: 200px;
+}
+/* End of start page */
+
+
+
+/*---------Select page ------------*/
+#selectPage{
+    display: block;
+    padding-top: 20px;
+}
+
+.perCircle{
+    display: inline-block;
+    margin: 10px;
+}
+
+.chooseCircle{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: sans-serif;
+    border:1px solid #ddd;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    line-height:150px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    vertical-align: 100%;
+    background-color: #ffffff;
+    color: #27ae60;
+    font-weight: bold;
+    box-shadow: inset 0 0 10px #f7f7f7, -5px -5px 15px 5px #fff ;
+}
+
+.chooseCircle:active{
+    box-shadow: none;
+}
+
+/*---------States page ------------*/
+#statesPage{
+    display: block;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.stateCard{
+    display: inline-block;
+    margin: 10px;
+    max-width: 400px;
+    width: 40%;
+    text-decoration: none;
+    padding: 15px 2px;
+    background-color: #27ae60;
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif ;
+    color: #ffffff;
+    text-transform: capitalize;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    cursor: pointer;
+}
+
+.stateCard:active{
+    -moz-box-shadow:    inset 0 0 10px #bdc3c7;
+    -webkit-box-shadow: inset 0 0 10px #bdc3c7;
+    box-shadow:         inset 0 0 10px #bdc3c7 ;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+}
+
+#FamousStatesController{
+    margin-left: 27%;
+    width: 90%;
+}
+
+/*-------------- Aspirants Page ----------------*/
+#aspirantsPage{
+    display: block;
+}
+
+#aspirantsPage .textbox{
+    margin:20px 0;
+}
+
+.candidate{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    margin: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.candidate .back{
+    background-color: #ffffff;
+    width: 80%;
+    min-height: 300px;
+    margin: 0px auto;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+.candidate .front{
+    width: 100%;
+    min-height: 200px;
+    margin-top: -245px;
+    background-image: url("../img/photo.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: transparent;
+    background-size: contain;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.candidate label{
+    display: block;
+    background-color: #ecf0f1;
+    width: 77%;
+    margin: 0px auto;
+    margin-top: 3px;
+    border-radius: 0 0 8px 8px;
+    -moz-border-radius: 0 0 8px 8px;
+    -webkit-border-radius: 0 0 8px 8px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.candidate label img{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.candidate span{
+    display: block;
+    background-color: #dddddd;
+    border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    -webkit-border-radius: 8px 8px 0 0;
+    padding: 5px;
+    text-transform: capitalize;
+    font-family: 'Roboto' ,sans-serif;
+    font-size: 17px;
+    -webkit-box-shadow: 0 8px 10px -6px #333333;
+    -moz-box-shadow: 0 8px 10px -6px #333333;
+    box-shadow: 0 8px 10px -6px #333333;
+}
+
+/*------- Profile Page--------------*/
+#profilePage{
+    display: block;
+    padding-top: 30px;
+}
+
+.profile{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    min-height:300px ;
+    background-color: #ffffff;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+.profile .green{
+    display: block;
+    min-height: 200px;
+    background-color: #27ae60;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    -webkit-border-radius: 8px 8px 0 0;
+}
+
+.profile section{
+    display: block;
+    margin-top: -115px;
+    text-align:center;
+}
+
+.profile section span{
+    display: block;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profile section .img{
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border:3px solid #ffffff;
+    margin: 0 auto;
+    background-image: url("../img/obama.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.profile section label{
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.profile section label img{
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+}
+
+.profile p{
+    display: block;
+    font-family: 'Roboto', sans-serif ;
+    text-transform: capitalize;
+    font-size: 17px;
+    padding: 5px;
+    background-color: #f6f6f6;
+    margin: 5px auto;
+    width: 90%;
+    text-align: left;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.profile p strong{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.profile p strong:after{
+    content: ":";
+}
+
+/*------ About Page --------------*/
+#aboutPage{
+    display: block;
+}
+
+.credits{
+    color: #ffffff;
+    font-size:18px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.credits ul{
+    list-style: none;
+}
+
+.credits ul li{
+    margin: 0;
+    padding:0;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.credits li a{
+    display: inline-block;
+    color: #111111;
+    text-align: center;
+    line-height: 30px;
+    margin:8px 0;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #ffffff;
+    padding:5px 8px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.credits li a:active{
+    background-color: #d35400;
+    color: #ffffff;
+}
+
+
+/* Animations */
+.rotatingShadow {
+    animation-name: myfirst;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+
+}
+
+@keyframes myfirst {
+    0%   {box-shadow: inset 0 0 10px #f7f7f7, -5px -5px 15px 5px #fff ;}
+    25%  {box-shadow: inset 0 0 10px #27ae60,  5px -5px 15px 5px #27ae60 ;}
+    50%  {box-shadow: inset 0 0 10px #f7f7f7,  5px  5px 15px 5px #fff ;}
+    75% {box-shadow: inset 0 0 10px #27ae60, -5px  5px 15px 5px #27ae60 ;}
+    100% {box-shadow: inset 0 0 10px #f7f7f7, -5px -5px 15px 5px #fff ;}
+}
+
+@-webkit-keyframes myfirst {
+    0%   {box-shadow: inset 0 0 10px #f7f7f7, -5px -5px 15px 5px #fff ;}
+    25%  {box-shadow: inset 0 0 10px #27ae60,  5px -5px 15px 5px #27ae60 ;}
+    50%  {box-shadow: inset 0 0 10px #f7f7f7,  5px  5px 15px 5px #fff ;}
+    75% {box-shadow: inset 0 0 10px #27ae60, -5px  5px 15px 5px #27ae60 ;}
+    100% {box-shadow: inset 0 0 10px #f7f7f7, -5px -5px 15px 5px #fff ;}
+}
+/* End of animations */
+
+

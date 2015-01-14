@@ -1,0 +1,19 @@
+<!--suppress ALL -->
+<div class="container" id="profilePage">
+
+	<div class="profile">
+		<div class="green"></div>
+		<section>
+			<span>{{ person.fullname }}</span>
+			<div class="img" style="background-image: url('{{ appSettings.serverBaseUrl }}/public/uploads/aspirants/{{ person.picture }} ')"></div>
+			<label><img src="{{ appSettings.serverBaseUrl }}/public/uploads/{{ person.party.logo }}" align="center" />{{ person.party.acronym }} {{ person.type }} Candidate</label>
+		</section>
+		<p><strong>state</strong> {{ person.state }}</p>
+		<p><strong>age</strong> {{ person.age }}</p>
+		<p><strong>profile</strong> {{ person.profile }}</p>
+		<p><strong>education</strong> {{ person.education }}</p>
+		<p><strong>political party</strong> {{ person.party.fullname }}</p>
+		<p><strong>achievments</strong> {{ person.party.achievments }}</p>
+	</div>
+
+</div>

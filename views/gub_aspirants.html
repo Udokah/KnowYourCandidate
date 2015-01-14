@@ -1,0 +1,19 @@
+<!--suppress ALL -->
+<div class="container" id="aspirantsPage">
+
+	<div>
+	<input type="search" ng-model="searchCandidates" class="textbox" placeholder="Search candidates" />
+    </div>
+
+	<a ng-repeat="person in aspirants | filter: searchCandidates"
+       ng-click="$event.preventDefault(); goToAspirantProfileGub(person)"
+       class="candidate repeat-animation" >
+		<div class="back">
+			<span>{{ person.fullname }}</span>
+		</div>
+		<div class="front" style="background-image: url('{{ appSettings.serverBaseUrl }}/public/uploads/aspirants/{{ person.picture }} ')"></div>
+		<label>{{ person.party.acronym }} <img src="{{ appSettings.serverBaseUrl }}/public/uploads/{{ person.party.logo }}" align="center" alt="pdp" /></label>
+	</a>
+
+
+</div>

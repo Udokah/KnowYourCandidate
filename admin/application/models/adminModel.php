@@ -17,7 +17,7 @@ class adminModel {
         $this->lib = new Library() ;
 
         try {
-            $this->db = new Database() ;
+            $this->db = new DatabaseModel() ;
         } catch (Exception $e) {
             exit('Database connection could not be established.');
         }

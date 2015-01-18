@@ -3,8 +3,9 @@ var modules = angular.module('myApp.services',[]);
 modules.factory('stateService', function($rootScope,$http,appSettings){
     var factory = [] ;
     var states ;
+    var promise ;
     factory.getStates = function(){
-        var promise = $http({
+        promise = $http({
             method: 'GET',
             cache: true ,
             url: appSettings.serverBaseUrl + "/states"
